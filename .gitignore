@@ -7,3 +7,13 @@ assets/Switzer-Variable.woff2
 .DS_Store
 __pycache__/
 *.pyc
+
+# Added by security audit 2026-10-22: never commit secrets or local agent settings
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.claude/settings.local.json
+*.sqlite
+*.sqlite3
